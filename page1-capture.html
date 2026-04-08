@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Stratégies pour Réduire vos Impôts en 2026 | Guide Offert — Proactifs Conseils</title>
+    <meta name="description" content="Téléchargez notre guide exclusif : 7 stratégies éprouvées pour réduire vos impôts en 2026. Conseils d'experts en gestion de patrimoine à Colombes, Hauts-de-Seine.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --navy: #0d1f3c; --navy-light: #162d54; --navy-dark: #091528;
+            --gold: #c9a84c; --gold-light: #e0c87a; --gold-dark: #a8893a;
+            --white: #ffffff; --off-white: #f8f6f1;
+            --gray-100: #f3f4f6; --gray-200: #e5e7eb; --gray-400: #9ca3af; --gray-600: #4b5563; --gray-800: #1f2937;
+            --success: #10b981;
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; color: var(--gray-800); background: var(--off-white); line-height: 1.6; overflow-x: hidden; }
+
+        .top-bar { background: var(--navy); padding: 10px 0; text-align: center; font-size: 0.82rem; color: var(--gold-light); letter-spacing: 0.5px; font-weight: 500; animation: fadeDown 0.8s ease; }
+        .top-bar span { color: var(--white); font-weight: 700; }
+
+        .hero { position: relative; background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 50%, var(--navy-light) 100%); min-height: 100vh; display: flex; align-items: center; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 20% 80%, rgba(201,168,76,0.08) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(201,168,76,0.05) 0%, transparent 50%); pointer-events: none; }
+        .hero-pattern { position: absolute; inset: 0; background-image: linear-gradient(rgba(201,168,76,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.03) 1px, transparent 1px); background-size: 60px 60px; pointer-events: none; }
+        .hero-glow { position: absolute; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%); top: -100px; right: -100px; animation: pulseGlow 6s ease-in-out infinite; }
+        .hero-container { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; padding: 80px 24px 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.3); border-radius: 50px; padding: 8px 18px; font-size: 0.8rem; color: var(--gold-light); font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 24px; animation: fadeUp 0.8s ease 0.2s both; }
+        .hero-badge::before { content: '📘'; font-size: 1rem; }
+        .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 800; color: var(--white); line-height: 1.15; margin-bottom: 20px; animation: fadeUp 0.8s ease 0.4s both; }
+        .hero-title .gold { color: var(--gold); }
+        .hero-subtitle { font-size: 1.1rem; color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 32px; max-width: 520px; animation: fadeUp 0.8s ease 0.6s both; }
+        .hero-stats { display: flex; gap: 32px; animation: fadeUp 0.8s ease 0.8s both; }
+        .hero-stat { text-align: center; }
+        .hero-stat-number { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 800; color: var(--gold); line-height: 1; }
+        .hero-stat-label { font-size: 0.78rem; color: rgba(255,255,255,0.55); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+        .form-card { background: var(--white); border-radius: 20px; padding: 40px 36px; box-shadow: 0 25px 60px rgba(0,0,0,0.3), 0 0 0 1px rgba(201,168,76,0.15); position: relative; animation: fadeUp 0.8s ease 0.5s both; }
+        .form-card::before { content: ''; position: absolute; top: -2px; left: -2px; right: -2px; bottom: -2px; background: linear-gradient(135deg, var(--gold), transparent 50%, var(--gold-dark)); border-radius: 22px; z-index: -1; opacity: 0.4; }
+        .form-header { text-align: center; margin-bottom: 28px; }
+        .form-icon { width: 64px; height: 64px; background: linear-gradient(135deg, var(--navy), var(--navy-light)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 1.8rem; box-shadow: 0 8px 24px rgba(13,31,60,0.3); }
+        .form-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+        .form-desc { font-size: 0.88rem; color: var(--gray-600); }
+        .form-group { margin-bottom: 16px; }
+        .form-group label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--navy); margin-bottom: 6px; letter-spacing: 0.3px; }
+        .form-group input, .form-group select { width: 100%; padding: 14px 16px; border: 2px solid var(--gray-200); border-radius: 12px; font-family: 'Inter', sans-serif; font-size: 0.95rem; color: var(--gray-800); background: var(--gray-100); transition: all 0.3s ease; outline: none; }
+        .form-group input:focus, .form-group select:focus { border-color: var(--gold); background: var(--white); box-shadow: 0 0 0 4px rgba(201,168,76,0.12); }
+        .form-group input::placeholder { color: var(--gray-400); }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .btn-submit { width: 100%; padding: 16px; background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: var(--navy-dark); border: none; border-radius: 12px; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.5px; cursor: pointer; transition: all 0.3s ease; margin-top: 8px; position: relative; overflow: hidden; }
+        .btn-submit::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, transparent, rgba(255,255,255,0.2), transparent); transform: translateX(-100%); transition: transform 0.5s ease; }
+        .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(201,168,76,0.35); }
+        .btn-submit:hover::after { transform: translateX(100%); }
+        .form-trust { display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 14px; font-size: 0.78rem; color: var(--gray-400); }
+        .form-trust svg { width: 14px; height: 14px; fill: var(--success); }
+
+        .benefits { padding: 100px 24px; background: var(--white); position: relative; }
+        .benefits::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--gold), var(--navy), var(--gold)); }
+        .section-container { max-width: 1100px; margin: 0 auto; }
+        .section-label { display: inline-flex; align-items: center; gap: 8px; font-size: 0.78rem; font-weight: 700; color: var(--gold-dark); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; }
+        .section-label::before { content: ''; width: 30px; height: 2px; background: var(--gold); }
+        .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 700; color: var(--navy); margin-bottom: 16px; line-height: 1.2; }
+        .section-subtitle { font-size: 1.05rem; color: var(--gray-600); max-width: 600px; margin-bottom: 60px; }
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+        .benefit-card { background: var(--off-white); border-radius: 16px; padding: 32px 28px; border: 1px solid var(--gray-200); transition: all 0.4s ease; position: relative; overflow: hidden; }
+        .benefit-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-dark)); transform: scaleX(0); transition: transform 0.4s ease; }
+        .benefit-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(13,31,60,0.08); border-color: rgba(201,168,76,0.3); }
+        .benefit-card:hover::after { transform: scaleX(1); }
+        .benefit-icon { width: 52px; height: 52px; background: linear-gradient(135deg, var(--navy), var(--navy-light)); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 18px; box-shadow: 0 6px 16px rgba(13,31,60,0.2); }
+        .benefit-title { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+        .benefit-text { font-size: 0.9rem; color: var(--gray-600); line-height: 1.65; }
+
+        .guide-preview { padding: 100px 24px; background: linear-gradient(135deg, var(--navy-dark), var(--navy)); position: relative; overflow: hidden; }
+        .guide-preview::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 50%, rgba(201,168,76,0.06) 0%, transparent 60%); }
+        .guide-container { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; position: relative; z-index: 2; }
+        .guide-chapters { list-style: none; }
+        .guide-chapter { display: flex; gap: 16px; padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,0.08); transition: all 0.3s ease; }
+        .guide-chapter:hover { padding-left: 8px; }
+        .chapter-num { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 800; color: var(--gold); line-height: 1; min-width: 36px; }
+        .chapter-title { font-weight: 600; color: var(--white); font-size: 0.98rem; margin-bottom: 4px; }
+        .chapter-desc { font-size: 0.82rem; color: rgba(255,255,255,0.5); }
+        .guide-visual { text-align: center; }
+        .guide-mockup { width: 280px; height: 380px; background: linear-gradient(145deg, var(--white), var(--gray-100)); border-radius: 8px; margin: 0 auto; box-shadow: 0 30px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(201,168,76,0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 30px; transform: perspective(800px) rotateY(-5deg); transition: transform 0.5s ease; }
+        .guide-mockup:hover { transform: perspective(800px) rotateY(0deg); }
+        .guide-mockup-logo { font-family: 'Playfair Display', serif; font-size: 0.85rem; color: var(--gold-dark); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 24px; font-weight: 700; }
+        .guide-mockup-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 800; color: var(--navy); text-align: center; line-height: 1.3; margin-bottom: 16px; }
+        .guide-mockup-year { font-size: 2.2rem; font-weight: 800; color: var(--gold); font-family: 'Playfair Display', serif; }
+        .guide-mockup-bar { width: 60px; height: 3px; background: var(--gold); margin: 16px 0; border-radius: 2px; }
+        .guide-mockup-subtitle { font-size: 0.75rem; color: var(--gray-600); text-transform: uppercase; letter-spacing: 1.5px; }
+
+        .social-proof { padding: 80px 24px; background: var(--off-white); }
+        .proof-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; }
+        .proof-card { background: var(--white); border-radius: 16px; padding: 32px 28px; border: 1px solid var(--gray-200); position: relative; }
+        .proof-card::before { content: '"'; font-family: 'Playfair Display', serif; font-size: 4rem; color: var(--gold); opacity: 0.3; position: absolute; top: 12px; left: 20px; line-height: 1; }
+        .proof-text { font-size: 0.92rem; color: var(--gray-600); font-style: italic; line-height: 1.7; margin-bottom: 18px; position: relative; z-index: 1; }
+        .proof-author { display: flex; align-items: center; gap: 12px; }
+        .proof-avatar { width: 42px; height: 42px; border-radius: 50%; background: linear-gradient(135deg, var(--navy), var(--navy-light)); display: flex; align-items: center; justify-content: center; color: var(--gold); font-weight: 700; font-size: 0.9rem; }
+        .proof-name { font-weight: 600; color: var(--navy); font-size: 0.88rem; }
+        .proof-role { font-size: 0.78rem; color: var(--gray-400); }
+        .proof-stars { color: var(--gold); font-size: 0.85rem; letter-spacing: 2px; margin-bottom: 12px; }
+
+        .cta-final { padding: 80px 24px; background: var(--white); text-align: center; }
+        .cta-box { max-width: 650px; margin: 0 auto; background: linear-gradient(135deg, var(--navy-dark), var(--navy)); border-radius: 24px; padding: 56px 48px; position: relative; overflow: hidden; }
+        .cta-box::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.1) 0%, transparent 60%); }
+        .cta-box .section-title { color: var(--white); position: relative; z-index: 1; }
+        .cta-box .section-subtitle { color: rgba(255,255,255,0.65); margin: 16px auto 32px; position: relative; z-index: 1; }
+        .btn-cta { display: inline-flex; align-items: center; gap: 10px; padding: 18px 40px; background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: var(--navy-dark); border: none; border-radius: 12px; font-family: 'Inter', sans-serif; font-size: 1.05rem; font-weight: 700; text-decoration: none; cursor: pointer; transition: all 0.3s ease; position: relative; z-index: 1; }
+        .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(201,168,76,0.35); }
+
+        .footer { background: var(--navy-dark); padding: 32px 24px; text-align: center; }
+        .footer-text { font-size: 0.82rem; color: rgba(255,255,255,0.4); }
+        .footer-text a { color: var(--gold); text-decoration: none; }
+
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeDown { from { opacity: 0; transform: translateY(-16px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulseGlow { 0%, 100% { opacity: 0.5; transform: scale(1); } 50% { opacity: 1; transform: scale(1.1); } }
+
+        @media (max-width: 900px) {
+            .hero-container { grid-template-columns: 1fr; text-align: center; padding-top: 60px; }
+            .hero-subtitle { margin-left: auto; margin-right: auto; }
+            .hero-stats { justify-content: center; }
+            .guide-container { grid-template-columns: 1fr; text-align: center; }
+            .guide-chapters { max-width: 500px; margin: 0 auto; }
+            .form-row { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) { .hero-stats { flex-direction: column; gap: 16px; } .cta-box { padding: 40px 24px; } }
+
+        .form-success { display: none; text-align: center; padding: 40px 20px; }
+        .form-success.active { display: block; animation: fadeUp 0.5s ease; }
+        .form-success-icon { width: 72px; height: 72px; background: linear-gradient(135deg, var(--success), #059669); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 2rem; }
+        .form-success h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--navy); margin-bottom: 8px; }
+        .form-success p { font-size: 0.9rem; color: var(--gray-600); }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="top-bar">🔥 <span>2 847 contribuables</span> ont déjà téléchargé ce guide en Île-de-France</div>
+
+    <section class="hero">
+        <div class="hero-pattern"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">Guide 2026 — Exclusif</div>
+                <h1 class="hero-title"><span class="gold">7 Stratégies</span> Éprouvées pour Réduire vos Impôts en 2026</h1>
+                <p class="hero-subtitle">Découvrez les dispositifs légaux que nos clients utilisent pour économiser en moyenne <strong style="color: var(--gold);">4 200 € par an</strong> sur leur imposition. Un guide rédigé par des experts en gestion de patrimoine.</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">10+</div>
+                        <div class="hero-stat-label">Années d'expertise</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">650+</div>
+                        <div class="hero-stat-label">Clients accompagnés</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">4.8/5</div>
+                        <div class="hero-stat-label">Note satisfaction</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-card">
+                <div id="formContent">
+                    <div class="form-header">
+                        <div class="form-icon">📘</div>
+                        <div class="form-title">Téléchargez votre guide</div>
+                        <div class="form-desc">Recevez-le instantanément par email</div>
+                    </div>
+                    <form id="captureForm" onsubmit="handleSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group"><label for="prenom">Prénom</label><input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required></div>
+                            <div class="form-group"><label for="nom">Nom</label><input type="text" id="nom" name="nom" placeholder="Votre nom" required></div>
+                        </div>
+                        <div class="form-group"><label for="email">Email professionnel</label><input type="email" id="email" name="email" placeholder="votre@email.com" required></div>
+                        <div class="form-group"><label for="telephone">Téléphone</label><input type="tel" id="telephone" name="telephone" placeholder="06 XX XX XX XX"></div>
+                        <div class="form-group"><label for="situation">Votre situation</label>
+                            <select id="situation" name="situation" required>
+                                <option value="" disabled selected>Sélectionnez...</option>
+                                <option value="salarie">Salarié(e) cadre</option>
+                                <option value="liberal">Profession libérale</option>
+                                <option value="entrepreneur">Chef d'entreprise</option>
+                                <option value="retraite">Retraité(e)</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-submit">📥 Recevoir mon guide</button>
+                    </form>
+                    <div class="form-trust"><svg viewBox="0 0 20 20"><path d="M10 1a4.5 4.5 0 00-4.5 4.5V9H4a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1v-8a1 1 0 00-1-1h-1.5V5.5A4.5 4.5 0 0010 1zm-2.5 8V5.5a2.5 2.5 0 015 0V9h-5z"/></svg> Vos données sont protégées • Zéro spam garanti</div>
+                </div>
+                <div class="form-success" id="formSuccess">
+                    <div class="form-success-icon">✓</div>
+                    <h3>Votre guide est en route !</h3>
+                    <p>Vérifiez votre boîte email dans les prochaines minutes.<br>Pensez à regarder dans vos spams.</p>
+                    <a href="page2-remerciement.html" class="btn-submit" style="display:inline-block; margin-top:20px; text-decoration:none; text-align:center;">Continuer →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="section-container">
+            <div class="section-label">Ce que vous allez découvrir</div>
+            <h2 class="section-title">Un guide concret, pas de la théorie</h2>
+            <p class="section-subtitle">Chaque stratégie est illustrée par des cas réels de contribuables en Hauts-de-Seine qui ont significativement réduit leur imposition.</p>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏠</div>
+                    <h3 class="benefit-title">Défiscalisation immobilière</h3>
+                    <p class="benefit-text">Denormandie, Loc'Avantages, LMNP, déficit foncier, Malraux… Comprenez quel dispositif correspond à votre situation et combien vous pouvez réellement économiser.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h3 class="benefit-title">Placements défiscalisants</h3>
+                    <p class="benefit-text">PER, assurance vie, FCPI/FIP… Les véhicules financiers qui réduisent votre base imposable tout en faisant fructifier votre épargne.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💼</div>
+                    <h3 class="benefit-title">Optimisation des revenus</h3>
+                    <p class="benefit-text">Stratégies spécifiques pour les cadres, professions libérales et dirigeants pour optimiser la structure de leurs revenus.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">👨‍👩‍👧‍👦</div>
+                    <h3 class="benefit-title">Stratégies familiales</h3>
+                    <p class="benefit-text">Donations, démembrement, SCI familiale… Les leviers patrimoniaux qui réduisent l'impôt tout en préparant la transmission.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3 class="benefit-title">Niches fiscales méconnues</h3>
+                    <p class="benefit-text">Les dispositifs que votre banquier ne vous propose pas et qui peuvent faire une réelle différence sur votre avis d'imposition.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📋</div>
+                    <h3 class="benefit-title">Plan d'action personnalisable</h3>
+                    <p class="benefit-text">Un tableau récapitulatif avec checklist pour identifier en 5 minutes les stratégies applicables à votre situation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="guide-preview">
+        <div class="guide-container">
+            <div>
+                <div class="section-label" style="color: var(--gold-light);">Aperçu du contenu</div>
+                <h2 class="section-title" style="color: var(--white);">7 chapitres, 7 stratégies</h2>
+                <ul class="guide-chapters">
+                    <li class="guide-chapter"><span class="chapter-num">01</span><div><div class="chapter-title">L'immobilier comme levier fiscal</div><div class="chapter-desc">Denormandie, Loc'Avantages, LMNP, déficit foncier, Malraux</div></div></li>
+                    <li class="guide-chapter"><span class="chapter-num">02</span><div><div class="chapter-title">Le PER : l'arme anti-impôt par excellence</div><div class="chapter-desc">Jusqu'à 10% de vos revenus déduits</div></div></li>
+                    <li class="guide-chapter"><span class="chapter-num">03</span><div><div class="chapter-title">Assurance vie : au-delà de l'épargne</div><div class="chapter-desc">Optimisation fiscale et transmission</div></div></li>
+                    <li class="guide-chapter"><span class="chapter-num">04</span><div><div class="chapter-title">FCPI / FIP : investir et défiscaliser</div><div class="chapter-desc">Réduction d'impôt sur le montant investi</div></div></li>
+                    <li class="guide-chapter"><span class="chapter-num">05</span><div><div class="chapter-title">La SCI familiale stratégique</div><div class="chapter-desc">Transmission, revenus fonciers, IFI</div></div></li>
+                    <li class="guide-chapter"><span class="chapter-num">06</span><div><div class="chapter-title">Le démembrement de propriété</div><div class="chapter-desc">Réduire l'IFI et optimiser la succession</div></div></li>
+                    <li class="guide-chapter"><span class="chapter-num">07</span><div><div class="chapter-title">Dons et mécénat : défiscaliser utile</div><div class="chapter-desc">66% à 75% de réduction d'impôt</div></div></li>
+                </ul>
+            </div>
+            <div class="guide-visual">
+                <div class="guide-mockup">
+                    <div class="guide-mockup-logo">Proactifs Conseils</div>
+                    <div class="guide-mockup-title">7 Stratégies pour Réduire vos Impôts</div>
+                    <div class="guide-mockup-year">2026</div>
+                    <div class="guide-mockup-bar"></div>
+                    <div class="guide-mockup-subtitle">Guide Exclusif</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-proof">
+        <div class="section-container" style="text-align:center;">
+            <div class="section-label" style="justify-content:center;">Témoignages</div>
+            <h2 class="section-title" style="margin-bottom:48px;">Ils ont optimisé leur fiscalité avec nous</h2>
+        </div>
+        <div class="proof-grid">
+            <div class="proof-card"><div class="proof-stars">★★★★★</div><p class="proof-text">Grâce aux conseils de Proactifs Conseils, j'ai réduit mon imposition de 3 800 € dès la première année. Le guide m'a ouvert les yeux sur des dispositifs que j'ignorais complètement.</p><div class="proof-author"><div class="proof-avatar">SL</div><div><div class="proof-name">Sophie L.</div><div class="proof-role">Cadre supérieur • Colombes</div></div></div></div>
+            <div class="proof-card"><div class="proof-stars">★★★★★</div><p class="proof-text">En tant que profession libérale, je pensais être bien conseillé. Ce guide m'a montré 3 leviers supplémentaires. L'appel découverte a été décisif pour passer à l'action.</p><div class="proof-author"><div class="proof-avatar">MK</div><div><div class="proof-name">Marc K.</div><div class="proof-role">Chirurgien-dentiste • Courbevoie</div></div></div></div>
+            <div class="proof-card"><div class="proof-stars">★★★★★</div><p class="proof-text">Un guide clair, sans jargon inutile. J'ai pu appliquer 2 stratégies immédiatement et économiser plus de 5 000 € sur ma déclaration. Je recommande vivement.</p><div class="proof-author"><div class="proof-avatar">PD</div><div><div class="proof-name">Philippe D.</div><div class="proof-role">Dirigeant PME • Nanterre</div></div></div></div>
+        </div>
+    </section>
+
+    <section class="cta-final">
+        <div class="cta-box">
+            <h2 class="section-title">Ne payez plus un euro de trop</h2>
+            <p class="section-subtitle">Rejoignez les 650+ clients qui ont déjà optimisé leur fiscalité grâce à notre accompagnement.</p>
+            <a href="#" class="btn-cta" onclick="document.querySelector('.hero').scrollIntoView({behavior:'smooth'}); return false;">📥 Télécharger le guide maintenant</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-text">© 2026 <a href="index.html">Proactifs Conseils</a> — Cabinet de Gestion de Patrimoine Indépendant<br>54 Rue du Bournard, 92700 Colombes • 01 84 78 28 30 • <a href="mailto:contact@proactifsconseils.fr">contact@proactifsconseils.fr</a></p>
+    </footer>
+
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            const formData = { prenom: document.getElementById('prenom').value, nom: document.getElementById('nom').value, email: document.getElementById('email').value, telephone: document.getElementById('telephone').value, situation: document.getElementById('situation').value, source: 'tunnel-optimisation-fiscale', lead_magnet: 'guide-7-strategies-impots-2026', date: new Date().toISOString() };
+            let leads = JSON.parse(localStorage.getItem('proactifs_leads') || '[]');
+            leads.push(formData);
+            localStorage.setItem('proactifs_leads', JSON.stringify(leads));
+            document.getElementById('captureForm').classList.add('hidden');
+            document.querySelector('.form-header').classList.add('hidden');
+            document.querySelector('.form-trust').classList.add('hidden');
+            document.getElementById('formSuccess').classList.add('active');
+        }
+        const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; } }); }, { threshold: 0.1 });
+        document.querySelectorAll('.benefit-card, .proof-card').forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(24px)'; el.style.transition = 'all 0.6s ease'; observer.observe(el); });
+    </script>
+</body>
+</html>

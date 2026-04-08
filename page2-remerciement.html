@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre guide est prêt ! — Proactifs Conseils</title>
+    <meta name="description" content="Votre guide 7 stratégies pour réduire vos impôts est en route. Découvrez comment aller plus loin avec un appel découverte personnalisé.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --navy: #0d1f3c; --navy-light: #162d54; --navy-dark: #091528; --gold: #c9a84c; --gold-light: #e0c87a; --gold-dark: #a8893a; --white: #ffffff; --off-white: #f8f6f1; --gray-100: #f3f4f6; --gray-200: #e5e7eb; --gray-400: #9ca3af; --gray-600: #4b5563; --gray-800: #1f2937; --success: #10b981; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; color: var(--gray-800); background: var(--off-white); line-height: 1.6; overflow-x: hidden; }
+
+        .confirm-hero { background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 50%, var(--navy-light) 100%); min-height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 80px 24px; position: relative; overflow: hidden; }
+        .confirm-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 30%, rgba(201,168,76,0.08) 0%, transparent 60%); }
+        .confirm-content { position: relative; z-index: 2; max-width: 650px; animation: fadeUp 0.8s ease; }
+        .confirm-icon { width: 100px; height: 100px; border-radius: 50%; background: linear-gradient(135deg, var(--success), #059669); display: flex; align-items: center; justify-content: center; margin: 0 auto 28px; font-size: 3rem; box-shadow: 0 0 0 12px rgba(16,185,129,0.15), 0 0 0 24px rgba(16,185,129,0.06); animation: scaleIn 0.6s ease 0.3s both; }
+        .confirm-title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; color: var(--white); margin-bottom: 16px; }
+        .confirm-title .gold { color: var(--gold); }
+        .confirm-text { font-size: 1.1rem; color: rgba(255,255,255,0.7); max-width: 500px; margin: 0 auto 32px; line-height: 1.7; }
+        .confirm-email-box { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 14px 24px; font-size: 0.9rem; color: rgba(255,255,255,0.6); }
+        .confirm-email-box strong { color: var(--gold-light); }
+
+        .next-step { padding: 80px 24px; background: var(--white); position: relative; }
+        .next-step::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--gold), var(--navy), var(--gold)); }
+        .next-container { max-width: 900px; margin: 0 auto; text-align: center; }
+        .section-label { display: inline-flex; align-items: center; gap: 8px; font-size: 0.78rem; font-weight: 700; color: var(--gold-dark); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; }
+        .section-label::before { content: ''; width: 30px; height: 2px; background: var(--gold); }
+        .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; color: var(--navy); margin-bottom: 16px; line-height: 1.25; }
+        .section-subtitle { font-size: 1.05rem; color: var(--gray-600); max-width: 580px; margin: 0 auto 48px; }
+
+        .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-bottom: 56px; }
+        .step { position: relative; padding: 36px 24px; background: var(--off-white); border-radius: 16px; border: 1px solid var(--gray-200); transition: all 0.3s ease; }
+        .step:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(13,31,60,0.06); border-color: rgba(201,168,76,0.3); }
+        .step-num { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); width: 32px; height: 32px; background: linear-gradient(135deg, var(--gold), var(--gold-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.85rem; color: var(--navy-dark); box-shadow: 0 4px 12px rgba(201,168,76,0.3); }
+        .step-icon { font-size: 2rem; margin-bottom: 14px; }
+        .step-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+        .step-text { font-size: 0.88rem; color: var(--gray-600); line-height: 1.6; }
+        .step.highlight { background: linear-gradient(135deg, var(--navy-dark), var(--navy)); border-color: var(--gold); }
+        .step.highlight .step-title { color: var(--white); }
+        .step.highlight .step-text { color: rgba(255,255,255,0.65); }
+
+        .btn-primary { display: inline-flex; align-items: center; gap: 10px; padding: 18px 44px; background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: var(--navy-dark); border: none; border-radius: 12px; font-family: 'Inter', sans-serif; font-size: 1.08rem; font-weight: 700; text-decoration: none; cursor: pointer; transition: all 0.3s ease; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(201,168,76,0.35); }
+        .btn-secondary { display: inline-block; margin-top: 14px; font-size: 0.88rem; color: var(--gray-400); text-decoration: none; transition: color 0.3s; }
+        .btn-secondary:hover { color: var(--navy); }
+
+        .why-section { padding: 80px 24px; background: var(--off-white); }
+        .why-container { max-width: 900px; margin: 0 auto; }
+        .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-top: 40px; }
+        .why-card { background: var(--white); border-radius: 14px; padding: 28px 24px; border: 1px solid var(--gray-200); display: flex; gap: 16px; align-items: flex-start; transition: all 0.3s ease; }
+        .why-card:hover { border-color: rgba(201,168,76,0.3); transform: translateY(-2px); }
+        .why-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--navy), var(--navy-light)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
+        .why-title { font-weight: 700; color: var(--navy); font-size: 0.95rem; margin-bottom: 4px; }
+        .why-text { font-size: 0.84rem; color: var(--gray-600); line-height: 1.55; }
+
+        .urgency-banner { background: linear-gradient(135deg, var(--navy-dark), var(--navy)); padding: 48px 24px; text-align: center; }
+        .urgency-content { max-width: 600px; margin: 0 auto; }
+        .urgency-timer { display: inline-flex; align-items: center; gap: 8px; background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.3); border-radius: 50px; padding: 8px 20px; font-size: 0.85rem; color: var(--gold-light); font-weight: 600; margin-bottom: 20px; }
+        .urgency-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--white); margin-bottom: 12px; }
+        .urgency-text { font-size: 0.95rem; color: rgba(255,255,255,0.6); margin-bottom: 24px; }
+
+        .footer { background: var(--navy-dark); padding: 32px 24px; text-align: center; }
+        .footer-text { font-size: 0.82rem; color: rgba(255,255,255,0.4); }
+        .footer-text a { color: var(--gold); text-decoration: none; }
+
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes scaleIn { from { opacity: 0; transform: scale(0.5); } to { opacity: 1; transform: scale(1); } }
+        @media (max-width: 768px) { .steps { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; } }
+    </style>
+</head>
+<body>
+    <section class="confirm-hero">
+        <div class="confirm-content">
+            <div class="confirm-icon">✓</div>
+            <h1 class="confirm-title">Votre guide est <span class="gold">en route</span> !</h1>
+            <p class="confirm-text">Nous venons de vous envoyer le guide <strong style="color:var(--gold-light);">"7 Stratégies pour Réduire vos Impôts en 2026"</strong> par email. Vérifiez votre boîte de réception (et vos spams).</p>
+            <div class="confirm-email-box">📧 Envoyé depuis <strong>contact@proactifsconseils.fr</strong></div>
+        </div>
+    </section>
+
+    <section class="next-step">
+        <div class="next-container">
+            <div class="section-label">Étape suivante</div>
+            <h2 class="section-title">Passez de la théorie à l'action</h2>
+            <p class="section-subtitle">Le guide vous donne les stratégies. Maintenant, découvrez lesquelles s'appliquent <strong>exactement à votre situation</strong>.</p>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-icon">📘</div><h3 class="step-title">Lisez le guide</h3><p class="step-text">Découvrez les 7 stratégies et identifiez celles qui correspondent à votre profil.</p></div>
+                <div class="step highlight"><div class="step-num">2</div><div class="step-icon">📞</div><h3 class="step-title">Appel découverte</h3><p class="step-text">30 minutes avec un expert pour analyser votre situation et chiffrer vos économies potentielles.</p></div>
+                <div class="step"><div class="step-num">3</div><div class="step-icon">🎯</div><h3 class="step-title">Plan d'action</h3><p class="step-text">Recevez votre stratégie personnalisée avec un plan d'action concret et chiffré.</p></div>
+            </div>
+            <a href="page3-appel-decouverte.html" class="btn-primary">📞 Réserver mon appel découverte</a><br>
+            <a href="index.html" class="btn-secondary">← Retour au site</a>
+        </div>
+    </section>
+
+    <section class="why-section">
+        <div class="why-container">
+            <div style="text-align:center;"><div class="section-label" style="justify-content:center;">Pourquoi Proactifs Conseils</div><h2 class="section-title">Un cabinet différent</h2></div>
+            <div class="why-grid">
+                <div class="why-card"><div class="why-icon">🏛️</div><div><div class="why-title">100% indépendant</div><div class="why-text">Aucun lien avec les banques. Nos conseils servent uniquement vos intérêts.</div></div></div>
+                <div class="why-card"><div class="why-icon">📍</div><div><div class="why-title">Ancré localement</div><div class="why-text">Basé à Colombes, nous connaissons les enjeux patrimoniaux des Hauts-de-Seine.</div></div></div>
+                <div class="why-card"><div class="why-icon">🤝</div><div><div class="why-title">Approche personnalisée</div><div class="why-text">Chaque stratégie est adaptée à votre situation, vos objectifs et votre profil fiscal.</div></div></div>
+                <div class="why-card"><div class="why-icon">📊</div><div><div class="why-title">Résultats mesurables</div><div class="why-text">Nos clients économisent en moyenne 4 200 € par an sur leur imposition.</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="urgency-banner">
+        <div class="urgency-content">
+            <div class="urgency-timer">⏰ Places limitées — <span id="slotsCount">3</span> créneaux restants cette semaine</div>
+            <h2 class="urgency-title">Ne remettez pas à demain</h2>
+            <p class="urgency-text">Chaque mois qui passe sans optimisation est un mois d'impôts payés en trop. Nos créneaux d'appels découverte sont limités.</p>
+            <a href="page3-appel-decouverte.html" class="btn-primary">📞 Réserver maintenant</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-text">© 2026 <a href="index.html">Proactifs Conseils</a> — Cabinet de Gestion de Patrimoine Indépendant<br>54 Rue du Bournard, 92700 Colombes • 01 84 78 28 30 • <a href="mailto:contact@proactifsconseils.fr">contact@proactifsconseils.fr</a></p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; } }); }, { threshold: 0.1 });
+        document.querySelectorAll('.step, .why-card').forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(24px)'; el.style.transition = 'all 0.6s ease'; observer.observe(el); });
+    </script>
+</body>
+</html>
